@@ -1,23 +1,22 @@
 :root {
 	--dark-bg-color: #2f303a;
 	--text-dark-bg-color: #ffffff;
-	--link-color: #212121;
 	--link-color-active: #2196f3;
 	--shaded-color: #757575;
-	--header-font-family: 'Roboto', sans-serif;
 	--text-font-family: 'Raleway', sans-serif;
+}
+*{
+	font-family:'Roboto', sans-serif;
+	color: #212121;
 }
 .global-header ul {
 	list-style-type: none;
 }
 .global-header a {
-	color: var(--link-color);
 	text-decoration: none;
 	font-size: 14px;
-	font-family: var(--header-font-family);
 	font-style: normal;
 	font-weight: 500;
-	line-height: normal;
 	letter-spacing: 0.28px;
 }
 .global-header a.logo,
@@ -43,10 +42,7 @@
 	color: var(--text-dark-bg-color);
 	text-decoration: none;
 	font-size: 14px;
-	font-family: var(--header-font-family);
 	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
 	letter-spacing: 0.42px;
 }
 .global-header a:hover,
@@ -56,105 +52,80 @@
 .global-header .active-link {
 	color: var(--link-color-active);
 }
-.main-section ul {
+.main-section ul,
+.our-assets,
+.portfolio-main-section ul{
 	list-style-type: none;
 }
 .main-section .main-section-intro {
 	background-color: var(--dark-bg-color);
-	font-family: var(--header-font-family);
 	text-align: center;
 }
 .main-section-intro h1 {
 	color: var(--text-dark-bg-color);
 	font-size: 44px;
 	font-weight: 900;
-	line-height: 60px;
+	line-height: 3.75em;
 	letter-spacing: 2.64px;
 	text-transform: uppercase;
 }
 .main-section-intro .button {
 	background-color: var(--link-color-active);
 	color: var(--text-dark-bg-color);
-	font-size: 16px;
 	font-weight: 700;
-	line-height: 30px;
+	line-height: 1.875em;
 	letter-spacing: 0.96px;
-}
-.our-assets {
-	list-style-type: none;
+	cursor: pointer;
 }
 .our-assets h2,
 p {
 	font-size: 14px;
-	font-family: var(--header-font-family);
 	letter-spacing: 0.42px;
 }
 .our-assets h2 {
-	color: var(--link-color);
 	font-weight: 700;
-	line-height: normal;
 	text-transform: uppercase;
 }
 .our-assets p {
 	color: var(--shaded-color);
-	font-weight: 400;
-	line-height: 24px;
+	line-height: 1.5em;
 }
 .section-header {
-	color: var(--link-color);
 	text-align: center;
 	font-size: 36px;
-	font-family: var(--header-font-family);
 	font-weight: 700;
-	line-height: normal;
 	letter-spacing: 1.08px;
 }
 .our-team {
 	text-align: center;
-	font-family: var(--header-font-family);
-	line-height: normal;
 	letter-spacing: 0.48px;
 }
 .our-team h3 {
-	color: var(--link-color);
 	font-weight: 500;
 }
 .our-team h4 {
 	color: var(--shaded-color);
-	font-weight: 400;
 }
-
-.portfolio-main-section ul {
-	list-style-type: none;
-}
-.portfolio-main-section .button {
-	color: var(--link-color);
+.portfolio-main-section button {
 	text-align: center;
-	font-size: 16px;
-	font-family: var(--header-font-family);
 	font-weight: 500;
 	line-height: 1.625em;
 	letter-spacing: 0.48px;
+	cursor: pointer;
 }
 .portfolio-main-section button:hover,
 .portfolio-main-section button:focus {
 	color: var(--text-dark-bg-color);
 	background-color: var(--link-color-active);
 }
-.project-list {
-	font-family: var(--header-font-family);
-}
 .project-list h3 {
-	color: var(--link-color);
 	font-size: 18px;
 	font-weight: 700;
-	line-height: 36px;
+	line-height: 2.25em;
 	letter-spacing: 1.08px;
 }
 .project-list h4 {
 	color: var(--shaded-color);
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 30px;
+	line-height: 1.875em;
 	letter-spacing: 0.48px;
 }
